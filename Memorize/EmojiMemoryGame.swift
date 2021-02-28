@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
-class EmojiMemoryGame {
-    private var model: MemoryGame<String>
+class EmojiMemoryGame: ObservableObject {
+     @Published private var model: MemoryGame<String>
     
     init() {
         model = EmojiMemoryGame.createMemoryGame()
